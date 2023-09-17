@@ -89,6 +89,9 @@ which pip # # <== should be contain 'miniforge3/envs/advanced_text_analysis_gesi
 
 ## Install required python packages
 
+Below is a detailed list of packages (and versions) to install.
+If you do not want to copy-paste this, you can install from the [requirements.txt](./requirements.txt) file instead with `pip install -r` (see https://stackoverflow.com/a/15593865)
+
 ```shell
 # for data wrangling
 pip install numpy==1.25.2 pandas==2.0.3 
@@ -103,10 +106,10 @@ pip install nltk==3.8.1 gensim==4.3.1
 pip install scipy==1.11.1 statsmodels==0.14.0 scikit-learn==1.3.0
 
 # for deep learning
-pip torch==2.1.0 tokenizers==0.13.3 datasets==2.14.2 transformers[sentencepiece]==4.31.0
+pip install torch==2.1.0 tokenizers==0.13.3 datasets==2.14.2 transformers[sentencepiece]==4.31.0
 
 # for using notebooks
-pip notebook
+pip install notebook
 ```
 
 ### Only for macOS with Apple silicon M1/M2: Check torch's can use M1/M2 chip
