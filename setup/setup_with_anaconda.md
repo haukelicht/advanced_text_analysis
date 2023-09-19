@@ -1,4 +1,4 @@
-#
+# Setup with Anaconda
 
 ## About Anaconda
 
@@ -16,7 +16,7 @@ If you [ask ChatGPT](https://chat.openai.com/share/958fe6cc-b411-43e5-b156-23fb6
 > 5. ... Anaconda includes Jupyter Notebook, ... [which] are widely used ... for creating interactive and shareable documents that combine code, explanations, and visualizations.
 > 6. ... Anaconda, Inc. offers educational resources and tutorials specifically designed for teachers and students. 
 
-## Setup 
+## Setup instructions
 
 To setup Anaconda for our course, you need to take three steps:
 
@@ -26,6 +26,8 @@ To setup Anaconda for our course, you need to take three steps:
 4. install required pacakages in your conda environment
 
 Let's take these steps in turn!
+
+**_Note:_** If you encounter any issues, [post an issue](https://github.com/haukelicht/advanced_text_analysis/issues) or email Hauke (via `hauke.licht [at] wiso [dot] uni-koeln [dot] de`).
 
 ### 1. Install Anaconda
 
@@ -105,3 +107,6 @@ In the Anaconda Prompt (Windows)/Terminal (macOS),
 1. run `conda install notebook` to install Jupyter Notebooks
 2. run `pip install -r https://raw.githubusercontent.com/haukelicht/advanced_text_analysis/main/setup/requirements.txt` to install all package dependencies
 
+## Errors and issues
+
+If you encounter any issues, [post an issue](https://github.com/haukelicht/advanced_text_analysis/issues) or email Hauke (via `hauke.licht [at] wiso [dot] uni-koeln [dot] de`).
