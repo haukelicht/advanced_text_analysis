@@ -2,7 +2,7 @@
 
 ## About Anaconda
 
-In the course we will use *Anaconda* 
+In the course we will use [*Anaconda*](https://www.anaconda.com/). 
 On [Wikipedia](https://en.wikipedia.org/wiki/Anaconda_(Python_distribution)), Anaconda is described as a
 
 > ... distribution of the Python and R programming languages for scientific computing, that aims to simplify package management and deployment.
