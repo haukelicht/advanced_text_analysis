@@ -68,7 +68,7 @@ With the installer downloaded, the following two links provide detailed follow-u
 
 follow the instructions here: https://docs.anaconda.com/free/anaconda/install/verify-install/
 
-### 4. Create a new conda environment
+### 3. Create a new conda environment
 
 #### Using the Anaconda Navigator app
 
