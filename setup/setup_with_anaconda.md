@@ -91,7 +91,7 @@ To create a new conda environment, run the following lines
 ```shell
 conda create --name advanced_text_analysis python=3.10 pip
 
-conda acitvate advanced_text_analysis
+conda activate advanced_text_analysis
 ```
 
 *Notes:* 
