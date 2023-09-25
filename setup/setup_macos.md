@@ -106,7 +106,7 @@ pip install nltk==3.8.1 gensim==4.3.1
 pip install scipy==1.11.1 statsmodels==0.14.0 scikit-learn==1.3.0
 
 # for deep learning
-pip install torch==2.1.0 tokenizers==0.13.3 datasets==2.14.2 transformers[sentencepiece]==4.31.0
+pip install torch==2.0.1 tokenizers==0.13.3 datasets==2.14.2 transformers[sentencepiece]==4.31.0
 
 # for using notebooks
 pip install notebook
