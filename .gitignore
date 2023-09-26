@@ -1,7 +1,6 @@
 # files and folders
 *.DS_Store
 data/corpora/*
-# !data/corpora/nyt_articles
 data/models/*
 
 # Byte-compiled / optimized / DLL files
