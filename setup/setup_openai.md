@@ -14,11 +14,11 @@ Go to [OpenAI](auth.openai.com/authorize) and sign in our create an account.
 6. In the *Configure payment* pop-up (or by clicking "Add to credit balance"), add some credit, e.g., U.S.$ 10
 
 
-![Step 2.3](./imgs/openai_project_create_new.png)
+<img src="./imgs/openai_project_create_new.png", alt="Step 2.3"  style="width:400px;"/>
 
-![Step 2.4 and 2.5](./imgs/openai_billing_overview.png)
+<img src="./imgs/openai_billing_overview.png", alt="Step 2.4 and 2.5" style="width:400px;"/>
 
-![Step 2.6](./imgs/openai_billing_configure_payment.png)
+<img src="./imgs/openai_billing_configure_payment.png", alt="Step 2.6" style="width:400px;"/>
 
 
 ## 3. Get your API key
@@ -27,7 +27,7 @@ Go to [OpenAI](auth.openai.com/authorize) and sign in our create an account.
 2. Create a new API key by clicking on the "Create new secret key" button.
 3. Fill your information in the form shown below and click on the "Create secret key"  button.
 
-<img src="./imgs/openai_key_create_new.png" alt="Pop-up for creating a new OpenAI API key" style="width:400px;"/>
+<img src="./imgs/openai_key_create_new.png" alt="Step 3.3" style="width:400px;"/>
 
 **IMPORTANT** &mdash; 
 Make sure you **take the step next** to store the API key in a safe place.
