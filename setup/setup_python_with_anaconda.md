@@ -1,4 +1,4 @@
-# Setup with Anaconda
+# Setup Python with Anaconda
 
 ## About Anaconda
 
@@ -50,11 +50,12 @@ With the installer downloaded, the following two links provide detailed follow-u
 
 #### Mac
 
-Download the Installer from https://www.anaconda.com/download#macos
+Download the Installer from https://www.anaconda.com/download#macos or 
+follow the instructions in ['setup_macos.md'](./setup_macos.md)
 
 *Notes:* 
 
-- If your computer has an M1/M2 chip, choose "Download for Mac (M1/M2)". Otherwise, choose "Download for Mac (Intel)"
+- If your computer has an M1/M2/3 chip, choose "Download for Mac (M1/M2/3)". Otherwise, choose "Download for Mac (Intel)"
 - If you *don't know* whether your Mac has an M1 or M2 chip (a.k.a "Apple Silicon"), follow these instructions to find out: https://www.howtogeek.com/706226/how-to-check-if-your-mac-is-using-an-intel-or-apple-silicon-processor
 
 With the installer downloaded, the following two links provide detailed follow-up instructions: 
@@ -78,7 +79,7 @@ If not, open it from your applications (see [here](https://docs.anaconda.com/fre
 Then, follow the instructions [here](https://docs.anaconda.com/free/navigator/tutorials/create-python35-environment/),  taking into account the following notes:
 
 - in step 4, use 'advanced_text_analysis' as environment name
-- in step 5, use the python version that starts with '3.10'
+- in step 5, use the python version that starts with '3.11'
 - in step 7, choose "open Terminal" and go to the next step of our setup process 
 
 #### Using the command line
@@ -86,27 +87,33 @@ Then, follow the instructions [here](https://docs.anaconda.com/free/navigator/tu
 - on Windows: Open the Anaconda Prompt
 - on macOS: Open the Terminal app
 
-To create a new conda environment, run the following lines
+To create a new conda environment, run the following lines:
+
+**_Note:_** If you are a Mac user and your MacBook has an M1, M2, or M3 chip, put `CONDA_SUBDIR=osx-arm64` in front of `conda create` when running the code below
 
 ```shell
-conda create --name advanced_text_analysis python=3.10 pip
+conda create --name advanced_text_analysis python=3.11 pip
 
 conda activate advanced_text_analysis
 ```
 
-*Notes:* 
 
 - The part after `--name` is the name of the environment. So our new environment is called 'advanced_text_analysis'
-- `python=3.10` specifies that we want to use python version 3.10 in this environment
+- `python=3.11` specifies that we want to use python version 3.11 in this environment
 - `pip` specifies that we want to pre-install pip
 
 ### 4. Install required pacakages
 
 In the Anaconda Prompt (Windows)/Terminal (macOS),
 
-1. run `conda install notebook` to install Jupyter Notebooks
-2. run `pip install -r https://raw.githubusercontent.com/haukelicht/advanced_text_analysis/main/setup/requirements.txt` to install all package dependencies
+```shell
+# install Jupyter Notebooks
+conda install notebook
+
+# install all required packages in the correct versions
+pip install -r https://raw.githubusercontent.com/haukelicht/advanced_text_analysis/main/setup/requirements.txt
+```
 
 ## Errors and issues
 
-If you encounter any issues, [post an issue](https://github.com/haukelicht/advanced_text_analysis/issues) or email Hauke (via `hauke.licht [at] wiso [dot] uni-koeln [dot] de`).
+If you encounter any issues, [post an issue](https://github.com/haukelicht/advanced_text_analysis/issues) or email Hauke (via hauke.licht@uibk.ac.at).

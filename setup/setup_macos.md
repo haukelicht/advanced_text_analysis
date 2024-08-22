@@ -19,10 +19,10 @@ Please follow the instructions here: https://docs.brew.sh/Installation
 
 ### Install python and conda through minforge
 
-Once you have installed homebrew, you can  use it to install python (version 3.10):
+Once you have installed homebrew, you can  use it to install python (version 3.11):
 
 ```shell
-brew install python@3.10
+brew install python@3.11
 whereis python
 python --version
 ```
@@ -49,21 +49,21 @@ But if you do *not* want to (or cannot) use homebrew, you can install manually i
 
 First check if your Mac uses an Apple silicon instead of an Intel processors: https://support.apple.com/
 
-### macOS (without Apple silicon M1/M2 processor)
+### macOS (without Apple silicon M1/M2/3 processor)
 
 ```shell
 # create
-conda create -n advanced_text_analysis_gesis_2023 python=3.10 pip
+conda create -n advanced_text_analysis_gesis python=3.11 pip
 
 # activate
-conda activate advanced_text_analysis_gesis_2023
+conda activate advanced_text_analysis_gesis
 
 # verify python and pip versions and paths
 python --version
-which python # <== should be contain 'miniforge3/envs/advanced_text_analysis_gesis_2023/bin'
+which python # <== should be contain 'miniforge3/envs/advanced_text_analysis_gesis/bin'
 
 pip --version
-which pip # # <== should be contain 'miniforge3/envs/advanced_text_analysis_gesis_2023/bin'
+which pip # # <== should be contain 'miniforge3/envs/advanced_text_analysis_gesis/bin'
 ```
 
 
@@ -73,48 +73,34 @@ source: https://towardsdatascience.com/python-conda-environments-for-both-arm64-
 
 ```shell
 # create
-CONDA_SUBDIR=osx-arm64 conda create -n advanced_text_analysis_gesis_2023 python=3.10 pip
+CONDA_SUBDIR=osx-arm64 conda create -n advanced_text_analysis_gesis python=3.11 pip
 
 # activate
-conda activate advanced_text_analysis_gesis_2023
+conda activate advanced_text_analysis_gesis
 
 # verify python and pip versions and paths
 python --version
-which python # <== should be contain 'miniforge3/envs/advanced_text_analysis_gesis_2023/bin'
+which python # <== should be contain 'miniforge3/envs/advanced_text_analysis_gesis/bin'
 
 pip --version
-which pip # # <== should be contain 'miniforge3/envs/advanced_text_analysis_gesis_2023/bin'
+which pip # # <== should be contain 'miniforge3/envs/advanced_text_analysis_gesis/bin'
 ```
 
 
 ## Install required python packages
 
-Below is a detailed list of packages (and versions) to install.
-If you do not want to copy-paste this, you can install from the [requirements.txt](./requirements.txt) file instead with `pip install -r` (see https://stackoverflow.com/a/15593865)
-
 ```shell
-# for data wrangling
-pip install numpy==1.25.2 pandas==2.0.3 
+# install Jupyter Notebooks
+conda install notebook
 
-# for plotting
-pip install seaborn==0.12.2 matplotlib==3.7.2
-
-# for text processing and word embeddings
-pip install nltk==3.8.1 gensim==4.3.1
-
-# for stats and machine learning
-pip install scipy==1.11.1 statsmodels==0.14.0 scikit-learn==1.3.0
-
-# for deep learning
-pip install torch==2.0.1 tokenizers==0.13.3 datasets==2.14.2 transformers[sentencepiece]==4.31.0
-
-# for using notebooks
-pip install notebook
+# install all required packages in the correct versions
+pip install -r https://raw.githubusercontent.com/haukelicht/advanced_text_analysis/main/setup/requirements.txt
 ```
 
-### Only for macOS with Apple silicon M1/M2: Check torch's can use M1/M2 chip
 
-*Note:* if your mac has an Apple silicon M1/M2 chip, you need to have at least macO 12.3 (Catalina) installed
+### Only for macOS with Apple silicon M1/M2/3: Check `torch` can use M1/M2/3 chip
+
+*Note:* if your mac has an Apple silicon M1/M2/3 chip, you need to have at least macOS 12.3 (Catalina) installed
 
 ```shell
 sw_vers | grep ProductVersion
@@ -122,7 +108,7 @@ sw_vers | grep ProductVersion
 
 If not, update your operating system.
 
-Next, you can check that Apple silicon M1/M2 chip available to `torch`: 
+Next, you can check that Apple silicon M1/M2/3 chip available to `torch`: 
 
 ```shell
 python -c 'import torch.backends.mps as mps; print(mps.is_available())' # <== should be True
