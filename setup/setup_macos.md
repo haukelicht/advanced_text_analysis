@@ -53,7 +53,7 @@ First check if your Mac uses an Apple silicon instead of an Intel processors: ht
 
 ```shell
 # create
-conda create -n advanced_text_analysis_gesis python=3.11 pip
+conda create -y -n advanced_text_analysis_gesis python=3.11 pip
 
 # activate
 conda activate advanced_text_analysis_gesis
@@ -73,7 +73,7 @@ source: https://towardsdatascience.com/python-conda-environments-for-both-arm64-
 
 ```shell
 # create
-CONDA_SUBDIR=osx-arm64 conda create -n advanced_text_analysis_gesis python=3.11 pip
+CONDA_SUBDIR=osx-arm64 conda create -y -n advanced_text_analysis_gesis python=3.11 pip
 
 # activate
 conda activate advanced_text_analysis_gesis
@@ -91,7 +91,7 @@ which pip # # <== should be contain 'miniforge3/envs/advanced_text_analysis_gesi
 
 ```shell
 # install Jupyter Notebooks
-conda install notebook
+conda install -y notebook
 
 # install all required packages in the correct versions
 pip install -r https://raw.githubusercontent.com/haukelicht/advanced_text_analysis/main/setup/requirements.txt
