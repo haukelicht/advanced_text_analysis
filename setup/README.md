@@ -15,3 +15,9 @@ You have several options:
 Follow the instructions in [setup_openai.md](./setup_openai.md)
 
 ## `ollama` for using open-source LLMs
+
+Follow the instructions in [setup_openai.md](./setup_openai.md)
+
+## Google Colab for running notebooks online 
+
+Follow the instructions in [setup_google_colab.md](./setup_google_colab.md)
