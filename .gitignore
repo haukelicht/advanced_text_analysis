@@ -5,8 +5,9 @@ data/models/*
 
 _backup/
 
-code/sandbox.ipynb
-code/test_*.ipynb
+notebooks/
+notebooks/sandbox.ipynb
+notebooks/test_*.ipynb
 
 results/*/checkpoint-*/
 
