@@ -5,6 +5,11 @@ data/models/*
 
 _backup/
 
+code/sandbox.ipynb
+code/test_*.ipynb
+
+results/*/checkpoint-*/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

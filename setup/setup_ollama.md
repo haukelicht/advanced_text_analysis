@@ -1,5 +1,3 @@
-setup_ollama.md
-
 # Install and setup `ollama`
 
 We will use `ollama` to interact with open-source LLMs.
