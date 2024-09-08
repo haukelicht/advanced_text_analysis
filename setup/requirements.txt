@@ -2,7 +2,7 @@ numpy==1.26.4
 scipy==1.13.1
 pyarrow==15.0.0
 pandas==2.1.4
-seaborn==0.13.2
+seaborn==0.13.1
 matplotlib==3.9.2
 nltk==3.9.1
 gensim==4.3.3
@@ -11,7 +11,7 @@ scikit-learn==1.5.1
 datasets==2.21.0
 tokenizers==0.19.1
 sentencepiece==0.2.0
-protobuf==3.20.0
+protobuf==3.20.3
 accelerate==0.33.0
 transformers==4.44.1
 torch~=2.4.0

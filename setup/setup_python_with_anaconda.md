@@ -108,7 +108,7 @@ In the Anaconda Prompt (Windows)/Terminal (macOS),
 
 ```shell
 # install Jupyter Notebooks
-conda install notebook
+conda install -y notebook ipywidgets
 
 # install all required packages in the correct versions
 pip install -r https://raw.githubusercontent.com/haukelicht/advanced_text_analysis/main/setup/requirements.txt
