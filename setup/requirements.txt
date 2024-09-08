@@ -7,7 +7,7 @@ matplotlib==3.9.2
 nltk==3.9.1
 gensim==4.3.3
 statsmodels==0.14.2
-scikit==learn==1.5.1
+scikit-learn==1.5.1
 datasets==2.21.0
 tokenizers==0.19.1
 sentencepiece==0.2.0
