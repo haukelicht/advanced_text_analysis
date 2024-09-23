@@ -15,10 +15,9 @@ protobuf==3.20.3
 accelerate==0.33.0
 transformers==4.44.1
 torch~=2.4.0
-bertviz==1.4.0
 sentence-transformers==3.1.0
-umap==0.5.6
-hdbscan==0.8.38
+umap-learn==0.5.6
+hdbscan==0.8.33
 bertopic==0.16.3
 seqeval==1.2.2
 ollama==0.3.1
