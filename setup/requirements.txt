@@ -17,7 +17,7 @@ transformers==4.44.1
 torch~=2.4.0
 sentence-transformers==3.1.0
 umap-learn==0.5.6
-hdbscan==0.8.38
+hdbscan==0.8.33
 bertopic==0.16.3
 seqeval==1.2.2
 ollama==0.3.1

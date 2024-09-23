@@ -7,8 +7,8 @@ outline.md
 _backup/
 readings/
 
-code/sandbox.ipynb
-code/test_*.ipynb
+notebooks/sandbox.ipynb
+notebooks/test_*.ipynb
 
 results/*/checkpoint-*/
 
