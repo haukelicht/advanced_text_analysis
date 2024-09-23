@@ -9,6 +9,7 @@ readings/
 
 notebooks/sandbox.ipynb
 notebooks/test_*.ipynb
+notebooks/*_commented.ipynb
 
 results/*/checkpoint-*/
 
