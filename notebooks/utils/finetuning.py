@@ -182,6 +182,61 @@ def preprocess_sequence_classification_dataset(examples, tokenizer, label2id: Op
     output['labels'] = [label2id[l] for l in examples['label']] if label2id else examples['label']
     return output
 
+# ------------------------------------------------
+#  Pairwise classification
+# ------------------------------------------------
+
+def create_pairwise_classification_dataset(
+        corpus: List[Dict], 
+        text_fields: List[str]=['text1', 'text2'], 
+        label_field: str='label'
+    ) -> Dataset:
+    dataset = Dataset.from_list(corpus)
+    if len(text_fields) != 2:
+        raise ValueError('text_fields must be a list of length 2')
+    if label_field != 'label':
+        dataset = dataset.rename_column(label_field, 'label')
+    
+    if text_fields[0] != 'text1':
+        dataset = dataset.rename_column(text_fields[0], 'text1')
+    if text_fields[1] != 'text2':
+        dataset = dataset.rename_column(text_fields[1], 'text2')
+    required = ['text1', 'text2', 'label']
+    rm = [c for c in dataset.column_names if c not in required]
+    if len(rm) > 0:
+        dataset = dataset.remove_columns(rm)
+    return dataset
+
+def preprocess_pairwise_classification_dataset_for_reward_modeling(
+        examples, 
+        tokenizer, 
+        max_seq_length: Optional[int]= None,
+        **kwargs
+    ):
+    new_examples = {
+        # "labels": [],
+        "input_ids_chosen": [],
+        "attention_mask_chosen": [],
+        "input_ids_rejected": [],
+        "attention_mask_rejected": [],
+    }
+    for text1, text2, label in zip(examples["text1"], examples["text2"], examples["label"]):
+        _tokenize = lambda x: tokenizer(x, **kwargs)
+        if label == 1:
+            lab = 0
+            tokenized_chosen, tokenized_rejected = _tokenize(text1), _tokenize(text2)
+        elif label == 2:
+            lab = 1
+            tokenized_rejected, tokenized_chosen = _tokenize(text1), _tokenize(text2)
+        else:
+            raise ValueError("Label must be `1` or `2` to indicate index of chosen item.")
+        
+        # new_examples["labels"].append(lab)
+        new_examples["input_ids_chosen"].append(tokenized_chosen["input_ids"])
+        new_examples["attention_mask_chosen"].append(tokenized_chosen["attention_mask"])
+        new_examples["input_ids_rejected"].append(tokenized_rejected["input_ids"])
+        new_examples["attention_mask_rejected"].append(tokenized_rejected["attention_mask"])
+    return new_examples
 
 # ------------------------------------------------
 #  Token Classification

@@ -3,7 +3,9 @@
 data/corpora/*
 data/models/*
 
+outline.md
 _backup/
+readings/
 
 code/sandbox.ipynb
 code/test_*.ipynb
