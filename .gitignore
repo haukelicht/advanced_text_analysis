@@ -3,12 +3,12 @@
 data/corpora/*
 data/models/*
 
+outline.md
 _backup/
+readings/
 
-
-notebooks/
-notebooks/sandbox.ipynb
-notebooks/test_*.ipynb
+code/sandbox.ipynb
+code/test_*.ipynb
 
 results/*/checkpoint-*/
 
