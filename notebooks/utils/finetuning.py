@@ -76,6 +76,8 @@ def _split_data_frame(
     tmp, test_idxs = train_test_split(idxs, test_size=test_size, random_state=seed, stratify=df['__stratum__'] if stratify_by else None) if test_size > 0 else (idxs, [])
     train_idxs, dev_idxs = train_test_split(tmp, test_size=dev_size, random_state=seed, stratify=df.loc[tmp, '__stratum__'] if stratify_by else None) if dev_size > 0 else (tmp, [])
     
+    del df['__stratum__']
+    
     out = {'train': df.loc[train_idxs]}
     out['dev'] = df.loc[dev_idxs] if dev_size > 0 else None
     out['test'] = df.loc[test_idxs] if test_size > 0 else None
