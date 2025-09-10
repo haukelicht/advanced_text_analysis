@@ -1,5 +1,9 @@
 # files and folders
+.crossnote/
+**/*.DS_Store
 *.DS_Store
+
+data/
 data/corpora/*
 data/models/*
 
@@ -7,11 +11,9 @@ outline.md
 _backup/
 readings/
 
-notebooks/sandbox.ipynb
-notebooks/test_*.ipynb
-notebooks/*_commented.ipynb
-
 results/*/checkpoint-*/
+
+slides/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

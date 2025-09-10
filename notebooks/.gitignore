@@ -1,0 +1,9 @@
+*.ipynb
+!test.ipynb
+
+utils/
+
+# legacy
+sandbox.ipynb
+test_*.ipynb
+*_commented.ipynb

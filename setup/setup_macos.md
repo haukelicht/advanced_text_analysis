@@ -49,7 +49,7 @@ But if you do *not* want to (or cannot) use homebrew, you can install manually i
 
 First check if your Mac uses an Apple silicon instead of an Intel processors: https://support.apple.com/
 
-### macOS (without Apple silicon M1/M2/3 processor)
+### macOS (_without_ Apple silicon)
 
 ```shell
 # create
@@ -98,9 +98,9 @@ pip install -r https://raw.githubusercontent.com/haukelicht/advanced_text_analys
 ```
 
 
-### Only for macOS with Apple silicon M1/M2/3: Check `torch` can use M1/M2/3 chip
+### Only for macOS with Apple silicon (M1/M2/... chip): Check `torch` can use M1/M2/3 chip
 
-*Note:* if your mac has an Apple silicon M1/M2/3 chip, you need to have at least macOS 12.3 (Catalina) installed
+*Note:* if your mac has an Apple silicon (M1/M2/... chip), you need to have at least macOS 12.3 (Catalina) installed
 
 ```shell
 sw_vers | grep ProductVersion
@@ -108,7 +108,7 @@ sw_vers | grep ProductVersion
 
 If not, update your operating system.
 
-Next, you can check that Apple silicon M1/M2/3 chip available to `torch`: 
+Next, you can check that Apple silicon (M1/M2/... chip) available to `torch`: 
 
 ```shell
 python -c 'import torch.backends.mps as mps; print(mps.is_available())' # <== should be True

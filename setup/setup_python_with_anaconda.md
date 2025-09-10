@@ -27,7 +27,7 @@ To setup Anaconda for our course, you need to take three steps:
 
 Let's take these steps in turn!
 
-**_Note:_** If you encounter any issues, [post an issue](https://github.com/haukelicht/advanced_text_analysis/issues) or email Hauke (via `hauke.licht [at] wiso [dot] uni-koeln [dot] de`).
+**_Note:_** If you encounter any issues, email me (hauke.licht@uibk.ac.at) or [post an issue](https://github.com/haukelicht/advanced_text_analysis/issues).
 
 ### 1. Install Anaconda
 
@@ -36,38 +36,41 @@ For this, you need to download the installer for your operation system (Windows 
 
 #### Windows
 
-Download the Installer from https://www.anaconda.com/download#windows
+Download the Installer from https://www.anaconda.com/download/success#windows
 
 With the installer downloaded, the following two links provide detailed follow-up instructions: 
 
 - https://www.datacamp.com/tutorial/installing-anaconda-windows
-- https://docs.anaconda.com/free/anaconda/install/windows/
+- https://www.anaconda.com/docs/getting-started/anaconda/install#windows-installation
 
 *Notes:*
 
 1. The screenshots in the first link are a little outdated, but the instructions remain valid.
 2. In step six described in the first link, please opt for the "Alternative Aproach" (i.e., automatically add Anaconda to your PATH variable at installation time) 
 
-#### Mac
+#### MacOS/Linux
 
-Download the Installer from https://www.anaconda.com/download#macos or 
+Download the Installer from https://www.anaconda.com/download/success#mac or 
 follow the instructions in ['setup_macos.md'](./setup_macos.md)
 
 *Notes:* 
 
-- If your computer has an M1/M2/3 chip, choose "Download for Mac (M1/M2/3)". Otherwise, choose "Download for Mac (Intel)"
-- If you *don't know* whether your Mac has an M1 or M2 chip (a.k.a "Apple Silicon"), follow these instructions to find out: https://www.howtogeek.com/706226/how-to-check-if-your-mac-is-using-an-intel-or-apple-silicon-processor
+- If your computer has Apple silicon (i.e., and M1/M2/... chip), choose "64-bit (Apple silicon) Graphical Installer". Otherwise, choose ""64-bit (Intel chip) Graphical Installer""
+- If you *don't know* whether your Mac has Apple silicon, follow these instructions to find out: https://www.howtogeek.com/706226/how-to-check-if-your-mac-is-using-an-intel-or-apple-silicon-processor
 
 With the installer downloaded, the following two links provide detailed follow-up instructions: 
 
 - https://www.datacamp.com/tutorial/installing-anaconda-mac-os-x
-- https://docs.anaconda.com/free/anaconda/install/mac-os/
+- https://www.anaconda.com/docs/getting-started/anaconda/install#macos-linux-installation
 
 **_Important note:_** When asked to select the destination of the installation (step 4 in the second link), please choose "Install for me only" (e.g., use your Application folder)
 
 ### 2. Verify your Anaconda installation
 
-follow the instructions here: https://docs.anaconda.com/free/anaconda/install/verify-install/
+follow the instructions here: 
+
+- Windows: https://www.anaconda.com/docs/getting-started/anaconda/install#windows-installation:how-do-i-verify-my-installers-integrity
+- macOS/Linux: https://www.anaconda.com/docs/getting-started/anaconda/install#macos-linux-installation:how-do-i-verify-my-installers-integrity
 
 ### 3. Create a new conda environment
 
@@ -78,8 +81,8 @@ If not, open it from your applications (see [here](https://docs.anaconda.com/fre
 
 Then, follow the instructions [here](https://docs.anaconda.com/free/navigator/tutorials/create-python35-environment/),  taking into account the following notes:
 
-- in step 4, use 'advanced_text_analysis' as environment name
-- in step 5, use the python version that starts with '3.11'
+- in step 4, use 'advanced_text_analysis_gesis_2025' as environment name
+- in step 5, use the python version that starts with '3.11' (or higher)
 - in step 7, choose "open Terminal" and go to the next step of our setup process 
 
 #### Using the command line
@@ -92,14 +95,14 @@ To create a new conda environment, run the following lines:
 **_Note:_** If you are a Mac user and your MacBook has an M1, M2, or M3 chip, put `CONDA_SUBDIR=osx-arm64` in front of `conda create` when running the code below
 
 ```shell
-conda create --name advanced_text_analysis python=3.11 pip
+conda create --name advanced_text_analysis_gesis_2025 python=3.12 pip
 
-conda activate advanced_text_analysis
+conda activate advanced_text_analysis_gesis_2025
 ```
 
 
-- The part after `--name` is the name of the environment. So our new environment is called 'advanced_text_analysis'
-- `python=3.11` specifies that we want to use python version 3.11 in this environment
+- The part after `--name` is the name of the environment. So our new environment is called 'advanced_text_analysis_gesis_2025'
+- `python=3.12` specifies that we want to use python version 3.12 in this environment
 - `pip` specifies that we want to pre-install pip
 
 ### 4. Install required pacakages
@@ -107,9 +110,6 @@ conda activate advanced_text_analysis
 In the Anaconda Prompt (Windows)/Terminal (macOS),
 
 ```shell
-# install Jupyter Notebooks
-conda install -y notebook ipywidgets
-
 # install all required packages in the correct versions
 pip install -r https://raw.githubusercontent.com/haukelicht/advanced_text_analysis/main/setup/requirements.txt
 ```
