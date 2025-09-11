@@ -31,7 +31,7 @@ For this, you'll need to open
 In the Anaconda Prompt/Terminal, execute the following lines (by copy-pasting them there and pressing Enter):
 
 ```bash
-conda create -n advanced_text_analysis_gesis_2025 -y python=3.12 pip
+conda create -n advanced_text_analysis_gesis_2025 -y python=3.11 pip
 conda activate advanced_text_analysis_gesis_2025
 pip install -r https://raw.githubusercontent.com/haukelicht/advanced_text_analysis/main/setup/requirements.txt
 ```

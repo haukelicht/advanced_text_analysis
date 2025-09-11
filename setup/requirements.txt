@@ -1,12 +1,12 @@
 # data wrangling
-numpy~=2.0.0
-scipy~=1.16.0
+numpy~=1.26.0
+scipy~=1.10.1
 pillow~=10.4.0
 pandas~=2.2.2
 # basic text processing
 regex~=2025.9.1
 nltk==3.9.1
-gensim~=4.1.0
+gensim~=4.3.0
 # machine learning basics
 scikit-learn~=1.7.2
 statsmodels~=0.14.5

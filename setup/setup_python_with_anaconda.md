@@ -95,14 +95,14 @@ To create a new conda environment, run the following lines:
 **_Note:_** If you are a Mac user and your MacBook has an M1, M2, or M3 chip, put `CONDA_SUBDIR=osx-arm64` in front of `conda create` when running the code below
 
 ```shell
-conda create --name advanced_text_analysis_gesis_2025 python=3.12 pip
+conda create --name advanced_text_analysis_gesis_2025 python=3.11 pip
 
 conda activate advanced_text_analysis_gesis_2025
 ```
 
 
 - The part after `--name` is the name of the environment. So our new environment is called 'advanced_text_analysis_gesis_2025'
-- `python=3.12` specifies that we want to use python version 3.12 in this environment
+- `python=3.11` specifies that we want to use python version 3.12 in this environment
 - `pip` specifies that we want to pre-install pip
 
 ### 4. Install required pacakages
