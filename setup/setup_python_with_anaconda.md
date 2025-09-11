@@ -107,7 +107,17 @@ conda activate advanced_text_analysis_gesis_2025
 
 ### 4. Install required pacakages
 
-In the Anaconda Prompt (Windows)/Terminal (macOS),
+It's best to first check if there would be any version conflicts.
+
+So first, run the following command in the Anaconda Prompt (Windows)/Terminal (macOS):
+
+```shell
+pip install --dry-run --ignore-installed -r https://raw.githubusercontent.com/haukelicht/advanced_text_analysis/main/setup/requirements.txt
+```
+
+If this raises any error messages, report them to hauke.licht@uibk.ac.at.
+
+If not, install the packages by running the following command in the Anaconda Prompt (Windows)/Terminal (macOS):
 
 ```shell
 # install all required packages in the correct versions

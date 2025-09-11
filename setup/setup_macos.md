@@ -89,10 +89,17 @@ which pip # # <== should be contain 'miniforge3/envs/advanced_text_analysis_gesi
 
 ## Install required python packages
 
-```shell
-# install Jupyter Notebooks
-conda install -y notebook ipywidgets
+It's best to first check if there would be any version conflicts:
 
+```shell
+pip install --dry-run --ignore-installed -r https://raw.githubusercontent.com/haukelicht/advanced_text_analysis/main/setup/requirements.txt
+```
+
+If so, report to hauke.licht@uibk.ac.at.
+
+If not, install the packages:
+
+```shell
 # install all required packages in the correct versions
 pip install -r https://raw.githubusercontent.com/haukelicht/advanced_text_analysis/main/setup/requirements.txt
 ```
