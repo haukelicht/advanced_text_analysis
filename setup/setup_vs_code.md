@@ -1,10 +1,12 @@
 # Setting up VS Code
 
-We will be using Visual Studio Code (VS Code) as a code editor in the workshop.
-Please install **VS Code** before from https://code.visualstudio.com/Download.
+We will be using _Visual Studio Code_ (VS Code) as a code editor in the workshop.
+Please install **VS Code** _before_ the course from https://code.visualstudio.com/Download.
+
+**_Note for Windows users:_** Some python packages we use (e.g., numpy) require a working C++ installation. Please install C++ for VS Code from [here](https://code.visualstudio.com/docs/languages/cpp) as described here [here](https://code.visualstudio.com/docs/cpp/config-msvc).
 
 You will also need to install **Python** and the **conda** package manager.
-If you have not done so before. please refer to the setup instructions in [setup_python_with_anconda.md](./setup_python_with_anconda.md).
+If you have not done so before, please refer to the setup instructions in [setup_python_with_anconda.md](./setup_python_with_anconda.md).
 Alternatively, you can download and install
 
 - Python as described [here](https://www.python.org/downloads)
