@@ -3,6 +3,8 @@
 **/*.DS_Store
 *.DS_Store
 
+todos.md
+
 data/
 data/corpora/*
 data/models/*

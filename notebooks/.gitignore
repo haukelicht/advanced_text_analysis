@@ -1,0 +1,13 @@
+README-old.md
+
+*.ipynb
+!test.ipynb
+
+!annotation/compute_ica_*.ipynb
+
+utils/
+
+# legacy
+sandbox.ipynb
+test_*.ipynb
+*_commented.ipynb
