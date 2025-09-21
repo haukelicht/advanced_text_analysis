@@ -1,0 +1,9 @@
+!annotations/
+annotation_set_*.csv
+annotation_set_*.jsonl
+raw.xlsx
+
+!annotation_set_01.csv
+!annotation_set_02.csv
+!annotation_set_03.csv
+
