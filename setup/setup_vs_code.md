@@ -51,3 +51,53 @@ In our case, we will always select the `advanced_text_analysis_gesis_2025` envir
 
 - create a native python virtual environment (like [this](https://realpython.com/lessons/creating-virtual-environment/)), and/or
 - install the required python packages listed the [requirements.txt](setup/requirements.txt) file manually
+
+### Setup the course repo as a project in VS Code
+
+1. If you have not done so yet, clone the github repository as described in [setup_github_clone.md](./setup_github_clone.md)
+2. Open the VS Code app
+<!-- 3. In the menu (bar at the top of the app window), navigate to File > New Window -->
+3. Select Open (folder) option
+4. Open the folder named `advanced_text_analysis` you have created by cloning the github repo
+
+This should open the folder as a project in you VS Cod app
+
+### Make local code in `src/` available in Juptyer notebooks
+
+1. In VS Code, open an integrated terminal via the Menu (Terminal > New Terminal). The Terminal window opens in the center-bottom of the app window.
+2. in the Terminal, type: `pwd` and hit enter
+    - On macOS/Linux, this should print a line starting with `/User/`.
+    - On Windows, this should print a line starting with `C:\` (or another capital letter at the beginning, like `D`)
+3. Copy this line
+4. Create a file called `.env` in the root of your project folder by selecting File > New Text File in the menu. (It's important that the file name starts with a dot!)
+5. Open the file in VS Code.
+6. Now,
+	1. add a new line to the file
+    2. begin the line with `PYTHONPATH="`
+	3. paste the line you have copied in step (3) above behind the `"` (without a white space)
+    4. on
+        - macOS/Linux, add `:${PYTHONPATH}`
+        - Windows, add ` ${PYTHONPATH}` (with a white space at the beginning)
+    5. end the line with `"`
+6. In the menu, select File > Save
+
+
+#### Desired result
+
+The complete line you added to your `.env` file should look like this:
+
+##### on macOS/Linux
+
+```
+PYTHONPATH="/Users/hauke/courses/advanced_text_analysis:${PYTHONPATH}"
+```
+
+*note:* the part `/hauke/courses/` will be different for you, because you have the folder in a different location on your machine.
+
+##### on Windwos
+
+```
+PYTHONPATH="C:\Users\Hauke\Courses\advanced_text_analysis ${PYTHONPATH}"
+```
+
+*note:* the part `C:\Hauke\Courses\` will be different for you, because you have the folder in a different location on your machine.
