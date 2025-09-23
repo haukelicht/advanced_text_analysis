@@ -7,7 +7,7 @@ todos.md
 
 data/
 data/corpora/*
-data/models/*
+models/*
 
 outline.md
 _backup/
