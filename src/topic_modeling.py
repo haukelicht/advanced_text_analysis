@@ -10,9 +10,9 @@ from sklearn.metrics import (
     silhouette_score, # <== compute overall, corpus-level score
     silhouette_samples # <== compute sample/document-level scores
 )
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
-from typing import Union, List, Literal, Tuple, Dict
+# from typing import Union, List, Literal, Tuple, Dict
 
 # def compute_coherece(
 #         model: BERTopic, 
