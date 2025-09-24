@@ -46,7 +46,7 @@ def compute_sequence_classification_metrics_multiclass(
     # overall metrics
     with warnings.catch_warnings():
         warnings.filterwarnings('ignore')
-        precision_macro, recall_macro, f1_macro, _ = precision_recall_fscore_support(y_true, y_pred, average='macor', zero_division=0.0)
+        precision_macro, recall_macro, f1_macro, _ = precision_recall_fscore_support(y_true, y_pred, average='macro', zero_division=0.0)
         precision_micro, recall_micro, f1_micro, _ = precision_recall_fscore_support(y_true, y_pred, average='micro', zero_division=0.0)
         acc_balanced = balanced_accuracy_score(y_true, y_pred)
         acc_not_balanced = accuracy_score(y_true, y_pred)
