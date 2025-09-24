@@ -17,3 +17,15 @@ Fornaciari et al. point to Thomson et al.'s' ([2017](https://doi.org/10.1111/ajp
 
 However, Thomson et al. discuss the pros and cons of this narrow definition (see the [Supporting Information](https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1111%2Fajps.12313&file=ajps12313-sup-0001-SuppMat.pdf) for their paper).
 
+
+## Download data files
+
+| dataset_key        | file                                        | url                                                                                                                            |
+|:-------------------|:--------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------|
+| fornaciari_we_2021 | fornaciari_we_2021-pledge_binary.tsv        | https://cta-text-datasets.s3.eu-central-1.amazonaws.com/labeled/fornaciari_we_2021/fornaciari_we_2021-pledge_binary.tsv        |
+| fornaciari_we_2021 | fornaciari_we_2021-pledge_binary_sample.tsv | https://cta-text-datasets.s3.eu-central-1.amazonaws.com/labeled/fornaciari_we_2021/fornaciari_we_2021-pledge_binary_sample.tsv |
+| fornaciari_we_2021 | annotation_set_05.csv                       | https://cta-text-datasets.s3.eu-central-1.amazonaws.com/labeled/fornaciari_we_2021/annotation_set_05.csv                       |
+| fornaciari_we_2021 | annotation_set_04.csv                       | https://cta-text-datasets.s3.eu-central-1.amazonaws.com/labeled/fornaciari_we_2021/annotation_set_04.csv                       |
+| fornaciari_we_2021 | annotation_set_03.csv                       | https://cta-text-datasets.s3.eu-central-1.amazonaws.com/labeled/fornaciari_we_2021/annotation_set_03.csv                       |
+| fornaciari_we_2021 | annotation_set_02.csv                       | https://cta-text-datasets.s3.eu-central-1.amazonaws.com/labeled/fornaciari_we_2021/annotation_set_02.csv                       |
+| fornaciari_we_2021 | annotation_set_01.csv                       | https://cta-text-datasets.s3.eu-central-1.amazonaws.com/labeled/fornaciari_we_2021/annotation_set_01.csv                       |
