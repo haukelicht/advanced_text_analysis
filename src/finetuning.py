@@ -71,6 +71,8 @@ def _split_data_frame(
             assert col in df.columns, f"Column '{col}' not found in ``df``. cannot use for stratified splitting."
         # create a grouping indicator based on the stratification columns
         df['__stratum__'] = df.groupby(stratify_by).ngroup()
+    else:
+        df['__stratum__'] = 0
     
     idxs = df.index
     tmp, test_idxs = train_test_split(idxs, test_size=test_size, random_state=seed, stratify=df['__stratum__'] if stratify_by else None) if test_size > 0 else (idxs, [])
@@ -155,6 +157,8 @@ def split_data(
         return _split_data_frame(data, dev_size, test_size, stratify_by, seed, return_dict)
     elif isinstance(data, list) and all(isinstance(doc, dict) for doc in data):
         return _split_corpus(data, test_size, dev_size, stratify_by, seed, return_dict)
+    elif isinstance(data, list):
+        return _split_corpus(data, test_size, dev_size, None, seed, return_dict)
     else:
         raise ValueError('`data` must be a pandas DataFrame or a list of dictionaries')  
 
@@ -185,8 +189,24 @@ def preprocess_sequence_classification_dataset(examples, tokenizer, label2id: Op
     return output
 
 # ------------------------------------------------
-#  Pairwise classification
+#  Pairwise finetuning
 # ------------------------------------------------
+
+def unpair_data(data: List[Dict]) -> List[Dict]:
+    """
+    Convert paired data into separate examples
+    """
+    seen_ids = set()
+    unpacked_data = []
+    for row in data:
+        for i in [1, 2]:
+            if row[f"id{i}"] not in seen_ids:
+                seen_ids.add(row[f"id{i}"])
+                unpacked_data.append({
+                    "id": row[f"id{i}"],
+                    "text": row[f"text{i}"],
+                })
+    return unpacked_data
 
 def create_pairwise_classification_dataset(
         corpus: List[Dict], 

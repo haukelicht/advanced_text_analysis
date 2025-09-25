@@ -72,6 +72,61 @@ def compute_sequence_classification_metrics_multiclass(
 
     return results
 
+from sklearn.metrics import hamming_loss, accuracy_score, f1_score, label_ranking_loss
+
+def parse_sequence_classifier_prediction_output_multilabel(p: PredictionOutput):
+    logits, labels = p
+    probs = 1 / (1 + np.exp(-logits))  # Sigmoid
+    y_pred = (probs >= 0.5).astype(int)
+    return labels, y_pred
+
+def compute_sequence_classification_metrics_multilabel(y_true, y_pred) -> Dict[str, float]:
+    """
+    
+    **Interpretation**
+
+    - *Hamming Loss*
+    - Measures the fraction of labels that are incorrectly predicted (either a 0 instead of 1 or vice versa).
+    - Lower is better; `0.0` means perfect prediction.
+    - Formula: `(number of wrong labels) / (number of total labels)`
+    - Good for understanding average label-wise error rate.
+
+    - *Subset Accuracy (Exact Match Ratio)*
+    - Fraction of examples where **all** labels are predicted correctly.
+    - Very strict; requires the entire label set to be correct per sample.
+    - Value ranges from `0.0` (no perfect predictions) to `1.0` (all perfect).
+    - Not very forgiving if you're slightly wrong on multi-hot labels.
+
+    - *F1-Macro*
+    - Calculates F1 score **per label**, then takes the unweighted average.
+    - Treats all labels equally regardless of how often they appear.
+    - Sensitive to performance on rare labels.
+    - Useful when class imbalance is a concern and all labels are important.
+
+    - *F1-Micro*
+    - Aggregates true positives, false positives, and false negatives across all labels before computing F1.
+    - Gives more weight to frequent labels.
+    - Better when the number of positive examples per label varies a lot.
+    - Often higher than macro F1 in imbalanced datasets.
+
+    - *Ranking Loss*
+    - Measures how often a **relevant label** is ranked lower than an irrelevant one.
+    - Lower is better; `0.0` means perfect ranking.
+    - Requires access to the **raw prediction scores** (before thresholding).
+    - Useful in retrieval or recommendation scenarios where ranking quality matters.
+    """
+    
+    # Apply sigmoid and threshold
+
+    return {
+        "hamming_loss": hamming_loss(y_true, y_pred),
+        "subset_accuracy": accuracy_score(y_true, y_pred),
+        "f1_macro": f1_score(y_true, y_pred, average="macro"),
+        "f1_micro": f1_score(y_true, y_pred, average="micro"),
+        # "ranking_loss": label_ranking_loss(y_true, probs)
+    }
+
+
 # token classification
 
 def _correct_iob2(labels: List[str]) -> List[str]:
