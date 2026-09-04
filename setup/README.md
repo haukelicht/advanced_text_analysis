@@ -21,7 +21,7 @@ Follow the instructions in [setup_google_colab.md](./setup_google_colab.md)
 ## Accounts and software for using open-source LLMs
 
 - Install `ollama` following the instructions in [setup_ollama.md](./setup_ollama.md)
-<!-- - Create a Hugging Face (Pro) account following the instructions in [setup_huggingface.md](./setup_huggingface.md) -->
+- Create a Hugging Face (Pro) account and access token following the instructions in [setup_hugging_face_pro.md](./setup_hugging_face_pro.md)
 
 ## Accounts to use commercial LLMs
 

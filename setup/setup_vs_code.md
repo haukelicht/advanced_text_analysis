@@ -33,8 +33,8 @@ For this, you'll need to open
 In the Anaconda Prompt/Terminal, execute the following lines (by copy-pasting them there and pressing Enter):
 
 ```bash
-conda create -n advanced_text_analysis_gesis_2025 -y python=3.11 pip
-conda activate advanced_text_analysis_gesis_2025
+conda create -n advanced_text_analysis -y python=3.11 pip
+conda activate advanced_text_analysis
 pip install -r https://raw.githubusercontent.com/haukelicht/advanced_text_analysis/main/setup/requirements.txt
 ```
 
@@ -44,7 +44,7 @@ When running some python script or a cell in a Jupyter notebook in VS Code, you 
 
 <img src="./imgs/vscode_python_environments_popup.png" alt="Pop-up in VS Code for selecting a python interpreter" style="width:400px;"/>
 
-In our case, we will always select the `advanced_text_analysis_gesis_2025` environment
+In our case, we will always select the `advanced_text_analysis` environment
 
 
 **_Alternatives_** 

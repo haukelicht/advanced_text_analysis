@@ -8,17 +8,17 @@ Go to [OpenAI](auth.openai.com/authorize) and sign in our create an account.
 
 1. go to https://platform.openai.com/settings/organization/general
 2. In the top-left of the page-header, select "Personal" as you Organization
-3. **optional:** create a new project "advanced_text_analysis_gesis" as shown below.
+3. **optional:** create a new project "advanced_text_analysis" as shown below.
 4. Go to the Billing in the menu on the left (under "**Organzation**")
 5. Click on "Add payment details" and link a credit card
 6. In the *Configure payment* pop-up (or by clicking "Add to credit balance"), add some credit, e.g., U.S.$ 10
 
 
-<img src="./imgs/openai_project_create_new.png", alt="Step 2.3"  style="width:400px;"/>
+<img src="./imgs/openai/project_create_new.png", alt="Step 2.3"  style="width:400px;"/>
 
-<img src="./imgs/openai_billing_overview.png", alt="Step 2.4 and 2.5" style="width:400px;"/>
+<img src="./imgs/openai/billing_overview.png", alt="Step 2.4 and 2.5" style="width:400px;"/>
 
-<img src="./imgs/openai_billing_configure_payment.png", alt="Step 2.6" style="width:400px;"/>
+<img src="./imgs/openai/billing_configure_payment.png", alt="Step 2.6" style="width:400px;"/>
 
 
 ## 3. Get your API key
@@ -27,7 +27,7 @@ Go to [OpenAI](auth.openai.com/authorize) and sign in our create an account.
 2. Create a new API key by clicking on the "Create new secret key" button.
 3. Fill your information in the form shown below and click on the "Create secret key"  button.
 
-<img src="./imgs/openai_key_create_new.png" alt="Step 3.3" style="width:400px;"/>
+<img src="./imgs/openai/key_create_new.png" alt="Step 3.3" style="width:400px;"/>
 
 **IMPORTANT** &mdash; 
 Make sure you **take the step next** to store the API key in a safe place.
