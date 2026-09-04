@@ -1,0 +1,9 @@
+corpora/
+models/
+misc/
+
+**/*.csv
+**/*.tsv
+**/*.xlsx
+**/*.jsonl
+**/*.dta
