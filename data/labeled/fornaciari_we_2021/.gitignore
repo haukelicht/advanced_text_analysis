@@ -1,9 +1,7 @@
-!annotations/
-annotation_set_*.csv
-annotation_set_*.jsonl
-raw.xlsx
+annotations/annotation_set_*.csv
+!annotations/annotation_set_01.csv
+annotations/annotation_set_*.jsonl
+!annotations/annotation_set_01.jsonl
 
-!annotation_set_01.csv
-!annotation_set_02.csv
-!annotation_set_03.csv
-
+sample_annotation_sets.ipynb
+span_to_sentence_annotations.ipynb
