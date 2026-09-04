@@ -43,6 +43,7 @@ tiktoken~=0.14.0
 pyyaml~=6.0.3
 python-dotenv~=1.2.3
 tqdm~=4.67.1
+bertviz==1.4.1
 # notebooks
 jupyter #~=1.1.1
 jupyter-client #~=8.6.3

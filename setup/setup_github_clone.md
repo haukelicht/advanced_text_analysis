@@ -39,7 +39,6 @@ git clone https://github.com/haukelicht/advanced_text_analysis.git
 #### _otherwise_. on macOS
 
 - Open the **Terminal** app.
-![Open Terminal](./screenshots/macos_terminal.png)
 
 - Navigate to a folder where you want to store the repository (e.g., your `Documents` folder):
 
@@ -67,7 +66,7 @@ If you prefer a graphical interface:
 2. Open the app and log in with your GitHub account.
 3. Go to **File > Clone Repository**.
 4. Paste the repository's HTTPS link: https://github.com/haukelicht/advanced_text_analysis.git
-5. Select a local folder (e.g., `Documents/advanced_text_analysis`) where you want to save it.
+5. Select a local folder (e.g., `Documents`) where you want to save it.
 6. Click **Clone**.
 
 
@@ -90,7 +89,6 @@ Click **Fetch origin** → **Pull origin** in the top bar.
 
 ### 4. Important Notes
 
-- Always `git pull` before starting work, to make sure you have the latest version.
-- Do **not** edit files in the repository unless you are asked to. Changes may be overwritten when pulling updates.
-- If you accidentally make edits, keep a backup copy outside the repository folder.
+- To make sure you have the latest version, always `git pull` before you start working on a notebook.
+- To make sure that your local changes to notebooks and other files won't get lost, always save a copy of them with your name as suffix (e.g., save a copy of example_notebook.ipynb" as "example_notebook-hauke.ipynb"). Otherwise, your changes may be overwritten when pulling updates or you'll get [merge conflict](https://docs.github.com/en/pull-requests/how-tos/merge-and-close-pull-requests/resolving-a-merge-conflict-using-the-command-line).
 - If you see error messages when pulling, contact the course instructor.
