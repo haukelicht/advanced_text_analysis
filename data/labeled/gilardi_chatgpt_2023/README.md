@@ -5,6 +5,8 @@ date: 2024-02-25
 
 ## Description
 
+url: https://doi.org/10.1073/pnas.2305016120
+
 In their 2023 PNAS paper "ChatGPT outperforms crowd workers for text-annotation tasks", 
 Fabrizio Gilardi, Meysam Alizadeh, and Maël Kubli
 evaluate the performance of ChatGPT in zero-shot text classification.

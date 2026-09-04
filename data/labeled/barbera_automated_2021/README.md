@@ -5,7 +5,9 @@ date: 2024-01-12
 
 ## Description
 
-In their 2021 *Political Analysis* paper "Automated Text Classification of News Articles: A Practical Guide," Barberá and colleagues analyze the tone of coverage of the US national economy in the New York Times. To this end, they identify articles about the economy and their tone (positive--negative).
+url: https://doi.org/10.1017/pan.2020.8
+
+In their 2021 *Political Analysis* paper "Automated Text Classification of News Articles: A Practical Guide", Barberá and colleagues analyze the tone of coverage of the US national economy in the New York Times. To this end, they identify articles about the economy and their tone (positive--negative).
 
 Their measurements are generated through supervised text classification based on trained as well as crowd coders' annotations of news articles' texts.
 

@@ -5,6 +5,8 @@ date: 2024-01-30
 
 ## Description
 
+url: https://doi.org/10.1177/2158244020919447
+
 In their 2020 *SAGE Open* paper "The Dynamics of Political Incivility on Twitter," Theocharis and his colleagues measure incivility in public responses to messages shared by Members of Congress in the United States on Twitter (civil/uncivil).
 
 Their measurements are generated through supervised classification trained on human-coded samples.

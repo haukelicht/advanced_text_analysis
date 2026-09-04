@@ -5,6 +5,8 @@ date: 2024-02-25
 
 ## Description
 
+url: https://doi.org/10.1017/S0003055416000058
+
 In their 2016 *American Political Science Research* paper "Crowd-sourced Text Analysis: Reproducible and Agile Production
 of Political Data"
 Kenneth Benoit,

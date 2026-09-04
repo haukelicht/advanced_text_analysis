@@ -5,6 +5,8 @@ date: 2024-01-30
 
 ### Description
 
+url: https://doi.org/10.1017/pan.2022.10
+
 In their 2023 *Political Analysis* paper "Sentiment is Not Stance: Target-Aware Opinion Classification for Political Text Analysis," Bestvater and Monroe classified the sentiment (positive/negative) and stance (approving/opposing) of three datasets:
 
 1. tweets containing opinions about the 2017 Women's March
@@ -24,10 +26,10 @@ Felmee et al. (2020) collected 2.5 million geo-located tweets about the 2017 Wom
 According to Felmee et al. (2020), article section "Methods" (pp. 7),
 
 > Geo-located tweets were collected for the entire continental U.S. using the Twitter Streaming Application Programming Interface (API)....
-Tweets were collected for the 20th, 21st and 22nd January 2017 and saved to a text file in JSON format using a node.js application.
-Messages about the March were identified using terms specific to the event (i.e., women, march, women(s)march, woman(s)march)....
-We searched for these terms, and for combinations of the terms, to identify tweets related to the March....
-retweets were not included.
+> Tweets were collected for the 20th, 21st and 22nd January 2017 and saved to a text file in JSON format using a node.js application.
+> Messages about the March were identified using terms specific to the event (i.e., women, march, women(s)march, woman(s)march)....
+> We searched for these terms, and for combinations of the terms, to identify tweets related to the March....
+> retweets were not included.
 
 The authors also explain about the corpus and their sampling in their article section "2. Example I: Sentiment and Stance in Tweets About the 2017 Women’s March" (pp. 237-238).
 

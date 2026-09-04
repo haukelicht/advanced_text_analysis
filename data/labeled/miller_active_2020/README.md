@@ -5,6 +5,8 @@ date: 2024-01-30
 
 ## Description
 
+url: https://doi.org/10.1017/pan.2020.4
+
 In their 2020 *Political Analysis* paper "Active Learning Approaches for Labeling Text: Review and Assessment of the Performance of Active Learning Approaches," Miller and his colleagues contribute three human-annotated text datasets:
 
 1. tweets by German Twitter users coded for whether a tweet is about the refugee topic (yes/no)

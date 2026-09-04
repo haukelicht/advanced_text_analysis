@@ -1,4 +1,4 @@
-"""Download the Bestvater et al. (2023) crowd-coded dataset files.
+"""Download the Bestvater and Monroe (2023) crowd-coded dataset files.
 
 Run this script from anywhere; by default it writes the TSV files next to this
 script. Existing files are left untouched unless --force is passed.

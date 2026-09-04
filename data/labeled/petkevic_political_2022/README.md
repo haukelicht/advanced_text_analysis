@@ -5,6 +5,8 @@ date: 2024-01-24
 
 ## Description
 
+url: https://doi.org/10.1177/1532673X211055676
+
 In their 2022 *American Politics Research* paper "Political Attacks in 280 Characters or Less: A New Tool for the Automated Classification of Campaign Negativity on Social Media," Petkevic and Nai measure the negativity in candidate's campaign tweets in the 2018 U.S. Senate Midterms. 
 They identify the presence/absence of four phenomena:
 

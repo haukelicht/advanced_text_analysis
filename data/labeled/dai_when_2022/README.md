@@ -5,6 +5,8 @@ date: 2024-01-12
 
 ## Description
 
+url: https://doi.org/10.1080/10584609.2022.2025505
+
 In their 2022 *Political Communication* paper "When Do Politicians Use Populist Rhetoric? Populism as a Campaign Gamble," Dai and Kustov assess the prevalence of populist rhetoric across U.S. presidential campaign speeches (1952--2016).
 
 Their measurements are generated through a novel automated text analysis method utilizing active learning and word embedding.

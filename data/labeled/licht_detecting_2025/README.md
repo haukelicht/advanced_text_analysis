@@ -5,6 +5,8 @@ date: 2026-09-04
 
 ## Description
 
+url: https://doi.org/10.1017/S0007123424000954
+
 This dataset is derived from the annotations used in Licht and Sczepanski's 2025 British Journal of Political Science article, *Detecting Group Mentions in Political Rhetoric: A Supervised Learning Approach*.
 
 The task is span extraction: identify phrases in political texts that refer to social groups, and distinguish them from other annotated spans that are not social-group mentions.

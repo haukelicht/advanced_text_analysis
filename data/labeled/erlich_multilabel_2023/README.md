@@ -1,5 +1,7 @@
 The data comes from the paper
 
+url: https://doi.org/10.1017/pan.2021.15
+
 > Erlich A, Dantas SG, Bagozzi BE, Berliner D, Palmer-Rub. Multi-Label Prediction for Political Text-as-Data. *Political Analysis*. 2022; 30(4):463-480. DOI: [10.1017/pan.2021.15](https://doi.org/10.1017/pan.2021.15)
 
 daat file [hc_new.tab](https://dataverse.harvard.edu/file.xhtml?fileId=4437708&version=1.1)

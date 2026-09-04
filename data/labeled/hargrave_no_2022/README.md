@@ -5,6 +5,8 @@ date: 2024-01-10
 
 ## Description
 
+url: https://doi.org/10.1017/S0007123421000648
+
 In the 2022 BJPolS paper "No Longer Conforming to Stereotypes? Gender, Political Style and Parliamentary Debate in the UK," Lotte Hargrave and Jack Blumenau analyze the rhetorical style of male and female MPs in the house of commons along eight dimensions:
 
 - affective language

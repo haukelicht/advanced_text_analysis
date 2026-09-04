@@ -5,6 +5,8 @@ date: 2026-09-04
 
 ## Description
 
+url: https://doi.org/10.18653/v1/2025.emnlp-main.1635
+
 This dataset accompanies Licht et al.'s 2025 EMNLP paper, *Measuring scalar constructs in social science with LLMs*.
 
 The paper studies how large language models can be used to measure latent scalar constructs from political text. The data in this folder are pairwise-comparison annotations taken from three secondary sources used in the paper:

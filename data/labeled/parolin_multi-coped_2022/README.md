@@ -6,6 +6,8 @@ date: 2026-09-04
 
 ## Description
 
+url: https://doi.org/10.1145/3514094.3534178
+
 This dataset is derived from the Multi-CoPED benchmark introduced by Skorupa Parolin and colleagues in their 2022 AIES paper, *Multi-CoPED: A Multilingual Multi-Task Approach for Coding Political Event Data on Conflict and Mediation Domain*.
 
 The task here is token-level named-entity recognition for political event coding in the CAMEO scheme. Each token is tagged as part of an event source, target, or relation, or as outside of any event mention.

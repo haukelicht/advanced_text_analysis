@@ -5,6 +5,8 @@ date: 2024-01-30
 
 ## Description
 
+url: https://doi.org/10.1177/00491241221122317
+
 In their 2022 *Sociological Methods & Research* paper "Politics as Usual? Measuring Populism, Nationalism, and Authoritarianism in U.S. Presidential Campaigns (1952--2020) with Neural Language Models," Bonikowski and his colleagues measure the prevalence of radical right rhetoric in U.S. presidential campaigns by identifying three components on six dimensions:
 
 - populism

@@ -1,4 +1,4 @@
-"""Download the Hargrave et al. (2022) crowd-coded dataset files.
+"""Download the Hargrave and Blumenau (2022) crowd-coded dataset files.
 
 Run this script from anywhere; by default it writes the TSV files next to this
 script. Existing files are left untouched unless --force is passed.

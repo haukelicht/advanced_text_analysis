@@ -1,4 +1,4 @@
-"""Download the Petkević et al. (2022) dataset files.
+"""Download the Petkevic and Nai (2022) dataset files.
 
 Run this script from anywhere; by default it writes the TSV files next to this
 script. Existing files are left untouched unless --force is passed.

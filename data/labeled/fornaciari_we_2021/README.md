@@ -1,6 +1,7 @@
 # Sentence-level policy pledge annotations of English and Swedish manifesto sentences
 
 Paper: Fornaciari et al. ([2021](https://doi.org/10.18653/v1/2021.findings-acl.301))
+url: https://doi.org/10.18653/v1/2021.findings-acl.301
 Data: [Github](https://github.com/fornaciari/MiMac_taxes/raw/refs/heads/main/jupyter_xsl_preproc_210130170501/all210126.xlsx)
 
 ## Definition of pledge
