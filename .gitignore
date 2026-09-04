@@ -3,10 +3,10 @@
 **/*.DS_Store
 *.DS_Store
 
+.vscode
+
 todos.md
 
-data/
-data/corpora/*
 models/*
 
 outline.md
