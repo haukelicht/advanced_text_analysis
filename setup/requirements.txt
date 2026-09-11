@@ -4,7 +4,7 @@ scipy~=1.17.1
 pillow~=12.3.0
 pandas~=2.2.2
 # basic text processing
-regex~=2025.9.1
+regex>=2025.10.22
 nltk==3.10.3
 krippendorff==0.8.2
 # machine learning basics
