@@ -189,6 +189,19 @@ def preprocess_sequence_classification_dataset(examples, tokenizer, label2id: Op
     return output
 
 # ------------------------------------------------
+#  Sequence scoring (regression)
+# ------------------------------------------------
+
+# dataset assembly is identical to the classification case; only preprocessing (label dtype) differs
+create_sequence_scoring_dataset = create_sequence_classification_dataset
+
+def preprocess_sequence_scoring_dataset(examples, tokenizer, **kwargs):
+    output = tokenizer(examples['text'], **kwargs)
+    # cast to float since regression heads (num_labels=1) require float targets
+    output['labels'] = [float(l) for l in examples['label']]
+    return output
+
+# ------------------------------------------------
 #  Pairwise finetuning
 # ------------------------------------------------
 
