@@ -18,13 +18,13 @@ The cleaned CSV is sentence-level data with one row per annotated sentence.
 
 The main columns are:
 
+- `text_id`: unique text ID
 - `speaker`: speaker name
-- `party`: party affiliation
+- `party`: speaker's party affiliation
 - `date`: speech date
 - `agenda`: agenda topic as provided in the source data
 - `text`: annotated sentence text
-- `EU`: binary indicator for EU-related vs. domestic politics content
-- `CAP`: numeric Comparative Agendas Project policy code
+- `cap_topic`: numeric Comparative Agendas Project policy code
 
 The file [`cap_topic_codes.tsv`](cap_topic_codes.tsv) contains the codebook that maps CAP codes to topic labels.
 

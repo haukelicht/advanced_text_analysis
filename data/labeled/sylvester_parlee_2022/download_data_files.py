@@ -11,7 +11,7 @@ from urllib.request import urlretrieve
 
 
 FILES = {
-    "sylvester_parlee_2022-uk_cap_annotations.csv": "https://cta-text-datasets.s3.eu-central-1.amazonaws.com/labeled/sylvester_parlee_2022/sylvester_parlee_2022-uk_cap_annotations.csv"
+    "sylvester_parlee_2022-uk_cap_sentences.csv": "https://cta-text-datasets.s3.eu-central-1.amazonaws.com/labeled/sylvester_parlee_2022/sylvester_parlee_2022-uk_cap_sentences.csv"
 }
 
 
