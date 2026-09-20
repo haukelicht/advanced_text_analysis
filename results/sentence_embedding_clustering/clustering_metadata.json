@@ -1,0 +1,9 @@
+{
+  "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+  "umap_components_for_clustering": 24,
+  "umap_n_neighbors": 15,
+  "umap_min_dist": 0.0,
+  "hdbscan_min_cluster_size": 40,
+  "hdbscan_min_samples": 10,
+  "seed": 42
+}

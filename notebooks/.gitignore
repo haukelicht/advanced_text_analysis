@@ -6,6 +6,8 @@ colab_link
 
 *.ipynb
 !test.ipynb
+**/*.ipynb
+**/*.qmd
 
 !annotation/compute_ica_*.ipynb
 
