@@ -3,3 +3,5 @@
 !llm_inference_basics_api.ipynb
 !llm_fewshot_inference_api.ipynb
 !llm_inference_exercise_housing_classification.ipynb
+!llm_inference_async_api.ipynb
+!llm_inference_structured_api.ipynb
