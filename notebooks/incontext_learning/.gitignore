@@ -1,3 +1,4 @@
+*.ipynb
 !llm_inference_basics_transformers.ipynb
 !llm_inference_basics_api.ipynb
 !llm_fewshot_inference_api.ipynb
