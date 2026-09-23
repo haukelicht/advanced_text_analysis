@@ -1,0 +1,6 @@
+*.ipynb
+*.qmd
+!classifier_inference.ipynb
+!finetuning_logic_illustrated.ipynb
+!finetune_sequence_classifier.ipynb
+!finetune_sequence_classifier_multilabel.ipynb
