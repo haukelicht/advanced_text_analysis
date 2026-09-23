@@ -4,3 +4,5 @@
 !finetuning_logic_illustrated.ipynb
 !finetune_sequence_classifier.ipynb
 !finetune_sequence_classifier_multilabel.ipynb
+!finetune_sequence_scorer.ipynb
+!finetune_sequence_scorer_pairwise.ipynb
