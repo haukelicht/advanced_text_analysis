@@ -5,3 +5,5 @@
 !llm_inference_exercise_housing_classification.ipynb
 !llm_inference_async_api.ipynb
 !llm_inference_structured_api.ipynb
+!llm_inference_reasoning_api.ipynb
+!llm_inference_span_extraction.ipynb
