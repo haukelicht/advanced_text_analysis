@@ -6,3 +6,4 @@
 !finetune_sequence_classifier_multilabel.ipynb
 !finetune_sequence_scorer.ipynb
 !finetune_sequence_scorer_pairwise.ipynb
+!finetune_sequence_classifier_multilabel_setfit.ipynb
